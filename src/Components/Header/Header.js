@@ -21,9 +21,12 @@ const Header = () => {
 
                     </Nav>
                     <Nav>
-                        <Nav.Link as={Link} to="/home">More deets</Nav.Link>
-                        <Nav.Link as={Link} to="/home">
-                            Dank memes
+                        <Nav.Link as={Link} to="/">login</Nav.Link>
+                        <Nav.Link as={Link} to="/">
+                            Manage-Item
+                        </Nav.Link>
+                        <Nav.Link as={Link} to="/">
+                            Add-Item
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

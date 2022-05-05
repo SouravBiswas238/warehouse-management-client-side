@@ -11,10 +11,9 @@ const Services = () => {
             .then(data => setServices(data))
     }, [])
     return (
-        <div id="services" className='bg-light'>
-            <h1 className='text-center f-bold text-dark  m-0 pt-3 mb-0
-        '>WHAT WE OFFER</h1>
-            <p className='text-danger text-center'>Our Services</p>
+        <div id="services" className='bg-black'>
+            <h1 className='text-center f-bold text-light  m-0 py-3 mb-0
+        '>Our Services</h1>
 
             <div className='container'>
                 <div className="row">

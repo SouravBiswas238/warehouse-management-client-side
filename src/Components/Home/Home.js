@@ -5,6 +5,7 @@ import img2 from '../../img/2.jpg'
 import img3 from '../../img/3.jpg'
 import Contact from '../Contact/Contact';
 import Services from '../Services/Services';
+import Wirehouse from '../Wirehouse/Wirehouse';
 
 const Home = () => {
     return (
@@ -18,7 +19,8 @@ const Home = () => {
                     />
                     <Carousel.Caption>
                         <h3>Sourav Motor</h3>
-                        <p></p>
+                        <h4>Number One Envente  2022!</h4>
+                        <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -29,8 +31,9 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Sourav Motor</h3>
+                        <h4>Number One Envente  2022!</h4>
+                        <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -41,13 +44,15 @@ const Home = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Sourav Motor</h3>
+                        <h4>Number One Envente  2022!</h4>
+                        <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
 
             <Services></Services>
+            <Wirehouse></Wirehouse>
             <Contact></Contact>
         </div>
     );

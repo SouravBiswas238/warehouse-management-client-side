@@ -12,9 +12,9 @@ const Service = (props) => {
     return (
 
 
-        <div className="col-md-4 mb-2">
-            <div className='card'>
-                <div className="card-body">
+        <div className="col-md-4 mb-2 ">
+            <div className='card bg-secondary'>
+                <div className="card-body bg-secondary text-light">
                     <img className='w-100 mx-auto' src={picture} alt="bike-img" />
 
                     <h5 className="card-title">{name}</h5>
@@ -22,8 +22,8 @@ const Service = (props) => {
                     <p>Min. Order: {prize}</p>
                     <p className="card-text">{about.slice(0, 30)}.....</p>
                     <div className='d-flex justify-content-between'>
-                        <button className="btn btn-primary">Update</button>
-                        <button className="btn btn-primary">Go somewhere</button>
+                        <p className='d-inline-block text-warning'>Supplier: {name}</p>
+                        <button className="btn btn-warning">Update</button>
                     </div>
 
                 </div>
