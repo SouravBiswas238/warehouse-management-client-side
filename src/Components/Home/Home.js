@@ -18,7 +18,7 @@ const Home = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Sourav Motor</h3>
+                        <h3>Bike Directory</h3>
                         <h4>Number One Envente  2022!</h4>
                         <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>

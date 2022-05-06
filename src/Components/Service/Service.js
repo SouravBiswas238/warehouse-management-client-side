@@ -6,8 +6,8 @@ import './Service.css'
 const Service = (props) => {
     const { name, about, picture, prize, _id } = props.service;
     const navigate = useNavigate();
-    const handelchakeOutId = (name) => {
-        navigate(`/checkout/${name}`);
+    const handelchakeOutId = (_id) => {
+        navigate(`/inventory/${_id}`);
     }
     return (
 
@@ -23,7 +23,7 @@ const Service = (props) => {
                     <p className="card-text">{about.slice(0, 30)}.....</p>
                     <div className='d-flex justify-content-between'>
                         <p className='d-inline-block text-warning'>Supplier: {name}</p>
-                        <button className="btn btn-warning">Update</button>
+                        <button onClick={() => handelchakeOutId(_id)} className="btn btn-warning">Update</button>
                     </div>
 
                 </div>
