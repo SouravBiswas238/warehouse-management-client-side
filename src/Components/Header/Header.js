@@ -18,31 +18,34 @@ const Header = () => {
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand as={Link} to="/" className='my-logo'> <img src={logo} alt="" /> </Navbar.Brand>
+            <Container className=''>
+                <Navbar.Brand as={Link} to="/" className='my-logo text-white'> <img className='rounded-circle' src={logo} alt="" /> </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
 
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about">about</Nav.Link>
+                        <Nav.Link className='text-white' as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link className='text-white' as={Link} to="/about">about</Nav.Link>
 
 
                     </Nav>
                     <Nav>
-                        <Nav.Item>
+                        <Nav.Item className='text-white'>
                             {
-                                user ? <Nav.Link onClick={handelSignOut} eventKey="link-1">Sign Out</Nav.Link> : <Nav.Link eventKey=" link-1" as={Link} to="/login">Log In</Nav.Link>
+                                user ? <Nav.Link onClick={handelSignOut} eventKey="link-1" className='text-white'>Sign Out</Nav.Link> : <Nav.Link className='text-white' eventKey=" link-1" as={Link} to="/login">Log In</Nav.Link>
                             }
 
                         </Nav.Item>
-                        <Nav.Link as={Link} to="/">
-                            Manage-Item
-                        </Nav.Link>
-                        <Nav.Link as={Link} to="/">
-                            Add-Item
-                        </Nav.Link>
+
+                        {
+                            user ? <Nav.Link className='text-white' as={Link} to="/manage-inventory">Manage-Item</Nav.Link> : " "
+                        }
+                        {
+                            user ? <Nav.Link className='text-white' as={Link} to="/add-item">Add-Item</Nav.Link> : " "
+                        }
+
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>

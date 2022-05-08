@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardGroup, Col, Row } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+
+import { useNavigate } from 'react-router-dom';
+
 import './Service.css'
 
 const Service = (props) => {
@@ -9,6 +10,8 @@ const Service = (props) => {
     const handelchakeOutId = (_id) => {
         navigate(`/inventory/${_id}`);
     }
+
+
     return (
 
 

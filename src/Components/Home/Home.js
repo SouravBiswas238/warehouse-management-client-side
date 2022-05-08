@@ -13,44 +13,41 @@ const Home = () => {
             <Carousel>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 h-50"
                         src={img1}
                         alt="First slide"
                     />
                     <Carousel.Caption>
                         <h3>Bike Directory</h3>
-                        <h4>Number One Envente  2022!</h4>
                         <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 h-50"
                         src={img2}
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
                         <h3>Sourav Motor</h3>
-                        <h4>Number One Envente  2022!</h4>
                         <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block w-100 h-50"
                         src={img3}
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
                         <h3>Sourav Motor</h3>
-                        <h4>Number One Envente  2022!</h4>
                         <p>High Speed Electric Sport Racing Motorcycle Motorbike</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-
+            {/* service sectio and contact section */}
             <Services></Services>
             <Wirehouse></Wirehouse>
             <Contact></Contact>

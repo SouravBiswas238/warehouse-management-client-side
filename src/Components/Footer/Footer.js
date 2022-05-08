@@ -5,7 +5,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='bg-dark'>
-            <footer className="d-flex justify-content-between mx-5 ">
+            <footer className="d-flex justify-content-between mx-md-5 ">
                 <div className="m-2">
                     <span className="text-muted">copy right © 2022</span>
                 </div>
