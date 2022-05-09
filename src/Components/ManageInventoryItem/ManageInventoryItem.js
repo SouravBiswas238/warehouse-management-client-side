@@ -1,14 +1,16 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useService from '../../hooks/useService';
 
 const ManageInventoryItem = (props) => {
-    const { name, about, picture, prize, _id } = props.service;
-    const navigate = useNavigate();
-    const handelchakeOutId = (_id) => {
-        navigate(`/inventory/${_id}`);
-    }
-
+    // console.log(props.service);
+    const { productName, supplierName, price, about, picture, quantity, _id } = props.service;
+    // const navigate = useNavigate();
+    // const handelchakeOutId = (_id) => {
+    //     navigate(`/inventory/${_id}`);
+    // }
+    const { handelDelete } = useService();
 
     return (
 
@@ -16,11 +18,12 @@ const ManageInventoryItem = (props) => {
             <tr>
                 <td>{
                     1}</td>
-                <td>{name}</td>
-                <td>{name}</td>
-                <td>{name}</td>
+                <td>{productName}</td>
+                <td>{supplierName}</td>
+                <td>{price}</td>
+                <td>{quantity}</td>
                 <td>{_id}</td>
-                <td><button className='px-3 d-inline-block' onClick={() => console.log("a")}>delete icon</button></td>
+                <td><button className='px-3 d-inline-block' onClick={() => handelDelete(_id)}>delete icon</button></td>
             </tr>
 
         </tbody>

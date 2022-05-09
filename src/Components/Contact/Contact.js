@@ -4,8 +4,8 @@ import MyLocation from '../MyLocation/MyLocation';
 
 const Contact = () => {
     return (
-        <div className='pt-3 bg-secondary'>
-            <h3 className='mx-auto text-center'>Contact Us</h3>
+        <div className='pt-3 border-top bg-secondary'>
+            <h3 className='mx-auto text-center text-bold text-white'>Contact Us</h3>
 
             <div className='row w-100'>
 

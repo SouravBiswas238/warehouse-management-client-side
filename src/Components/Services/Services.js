@@ -8,7 +8,7 @@ import Loading from '../Loading/Loading';
 import Service from '../Service/Service';
 
 const Services = () => {
-    const [services] = useService();
+    const { services } = useService();
 
     const navigate = useNavigate();
     const handelManageInventory = () => {
@@ -27,12 +27,12 @@ const Services = () => {
             <div className='container'>
                 <div className="row">
                     {
-                        services.slice(0, 6).map(service => <Service service={service}></Service>)
+                        services.slice(0, 6).map(service => <Service key={service._id} service={service}></Service>)
                     }
                 </div>
 
             </div>
-            <button onClick={handelManageInventory} className='text-center btn btn-success m-3'>Manage Inventories</button>
+            <button onClick={handelManageInventory} className='text-center btn btn-danger m-3'>Manage Inventories</button>
         </div>
     );
 };

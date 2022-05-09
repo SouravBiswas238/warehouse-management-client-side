@@ -26,14 +26,14 @@ const Header = () => {
 
                     <Nav className="me-auto">
                         <Nav.Link className='text-white' as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link className='text-white' as={Link} to="/about">about</Nav.Link>
+                        <Nav.Link className='text-white' as={Link} to="/blogs">Blogs</Nav.Link>
 
 
                     </Nav>
                     <Nav>
                         <Nav.Item className='text-white'>
                             {
-                                user ? <Nav.Link onClick={handelSignOut} eventKey="link-1" className='text-white'>Sign Out</Nav.Link> : <Nav.Link className='text-white' eventKey=" link-1" as={Link} to="/login">Log In</Nav.Link>
+                                user ? <Nav.Link onClick={handelSignOut} eventKey="link-1" className='text-white'>Log Out</Nav.Link> : <Nav.Link className='text-white' eventKey=" link-1" as={Link} to="/login">Log In</Nav.Link>
                             }
 
                         </Nav.Item>
@@ -43,6 +43,9 @@ const Header = () => {
                         }
                         {
                             user ? <Nav.Link className='text-white' as={Link} to="/add-item">Add-Item</Nav.Link> : " "
+                        }
+                        {
+                            user ? <Nav.Link className='text-white' as={Link} to="/my-item">My-Item</Nav.Link> : " "
                         }
 
 

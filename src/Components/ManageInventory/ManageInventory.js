@@ -10,7 +10,7 @@ import Service from '../Service/Service';
 
 const ManageInventory = () => {
 
-    const [services] = useService();
+    const { services, setServices } = useService();
     const navigate = useNavigate();
 
     const handelAddItem = () => {
@@ -21,6 +21,8 @@ const ManageInventory = () => {
     if (!user) {
         return <Loading></Loading>
     }
+
+
 
     return (
         <div id="services" className='bg-black'>
@@ -36,9 +38,10 @@ const ManageInventory = () => {
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>
+                                <th>Product Name</th>
+                                <th>Supplier Name</th>
                                 <th>Price</th>
-                                <th>Price</th>
+                                <th>Quantity</th>
                                 <th>Product Id</th>
                                 <th>Delete Item</th>
                             </tr>

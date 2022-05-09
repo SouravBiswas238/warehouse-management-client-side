@@ -2,3 +2,8 @@
     width: 500px;
     background-color: red;
 }
+
+.my-size {
+    height: 250px;
+    /* width: 300px; */
+}

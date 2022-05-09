@@ -12,10 +12,12 @@ import SingUp from './Components/SignUp/SignUp';
 import useService from './hooks/useService';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddItem from './Components/AddItem/AddItem';
+import { ToastContainer } from 'react-toastify';
+import MyItem from './Components/MyItem/MyItem';
+import Blogs from './Components/Blogs/Blogs';
 
 
 function App() {
-  const [services] = useService();
   return (
     <div className=''>
       {/* this is navbar part */}
@@ -24,6 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}> </Route>
         <Route path='/home' element={<Home></Home>}> </Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}> </Route>
 
         <Route path='/inventory'
           element={
@@ -50,6 +53,7 @@ function App() {
           </RequreAuth>
         }> </Route>
         <Route path='/add-item' element={<AddItem></AddItem>}> </Route>
+        <Route path='/my-item' element={<MyItem></MyItem>}> </Route>
 
         <Route path='/login' element={<Login></Login>}> </Route>
         <Route path='/signup' element={<SingUp></SingUp>}> </Route>
@@ -57,6 +61,7 @@ function App() {
       </Routes>
       {/* this is footer */}
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
