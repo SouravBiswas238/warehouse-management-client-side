@@ -8,6 +8,7 @@ const AddItem = () => {
 
 
     const handelAddUser = event => {
+        // add form data part
         event.preventDefault();
         const productName = event.target.productName.value;
         const supplierName = event.target.supplierName.value;
@@ -28,7 +29,6 @@ const AddItem = () => {
         })
             .then(res => res.json())
             .then(data => {
-                // console.log('success', data);
                 const { response } = data;
                 const newBikes = [...services, data];
                 setServices(newBikes);
@@ -43,6 +43,7 @@ const AddItem = () => {
     }
     return (
         <div className='w-50 w-sm-100 mx-auto p-2'>
+            {/* add data part */}
             <form onSubmit={handelAddUser} >
                 <input className='mb-2 w-100' type="text" name='productName' placeholder='Product name' required />
                 <input className='mb-2 w-100' type="text" name='supplierName' placeholder='Supplier name' required />

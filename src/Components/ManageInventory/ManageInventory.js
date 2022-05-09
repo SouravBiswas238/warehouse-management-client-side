@@ -30,6 +30,7 @@ const ManageInventory = () => {
                 <h1 className='text-center f-bold text-light  m-0 py-3 mb-0'>Manage Services </h1>
 
             </div>
+            {/* table show data */}
             <div className='container'>
                 <div className="">
 

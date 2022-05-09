@@ -10,7 +10,7 @@ import './Header.css'
 
 const Header = () => {
 
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const handelSignOut = () => {
         signOut(auth);
@@ -30,6 +30,7 @@ const Header = () => {
 
 
                     </Nav>
+                    {/* this is right part of navbar  */}
                     <Nav>
                         <Nav.Item className='text-white'>
                             {
