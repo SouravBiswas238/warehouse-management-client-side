@@ -8,7 +8,7 @@ import Loading from '../Loading/Loading';
 import ManageInventoryItem from '../ManageInventoryItem/ManageInventoryItem';
 
 const MyItem = () => {
-    const { services, setServices } = useService();
+    const { services } = useService();
     const navigate = useNavigate();
 
     const handelAddItem = () => {

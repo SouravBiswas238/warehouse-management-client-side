@@ -9,7 +9,7 @@ import ManageInventoryItem from '../ManageInventoryItem/ManageInventoryItem';
 
 const ManageInventory = () => {
 
-    const { services, setServices } = useService();
+    const { services } = useService();
     const navigate = useNavigate();
 
     const handelAddItem = () => {
