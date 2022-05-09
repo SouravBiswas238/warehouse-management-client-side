@@ -6,7 +6,6 @@ import auth from '../../firebase.init';
 import useService from '../../hooks/useService';
 import Loading from '../Loading/Loading';
 import ManageInventoryItem from '../ManageInventoryItem/ManageInventoryItem';
-import Service from '../Service/Service';
 
 const ManageInventory = () => {
 

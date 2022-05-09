@@ -9,4 +9,4 @@
 * bikes can be added in this website
 * a user can delete service
 * also add some service and manage
-* add quantity and also contact us
+* add quantity and also contact

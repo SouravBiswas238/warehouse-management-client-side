@@ -9,7 +9,6 @@ import Login from './Components/Login/Login';
 import RequreAuth from './Components/RequreAuth/RequreAuth';
 import Inventory from './Components/Inventory/Inventory';
 import SingUp from './Components/SignUp/SignUp';
-import useService from './hooks/useService';
 import ManageInventory from './Components/ManageInventory/ManageInventory';
 import AddItem from './Components/AddItem/AddItem';
 import { ToastContainer } from 'react-toastify';

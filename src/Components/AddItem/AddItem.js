@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import useService from '../../hooks/useService';
 
@@ -43,7 +42,7 @@ const AddItem = () => {
 
     }
     return (
-        <div className='w-md-50 mx-auto p-2'>
+        <div className='w-50 w-sm-100 mx-auto p-2'>
             <form onSubmit={handelAddUser} >
                 <input className='mb-2 w-100' type="text" name='productName' placeholder='Product name' required />
                 <input className='mb-2 w-100' type="text" name='supplierName' placeholder='Supplier name' required />

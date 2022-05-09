@@ -1,4 +1,4 @@
-import { confirmPasswordReset } from 'firebase/auth';
+import { } from 'firebase/auth';
 import React, { useRef, useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
@@ -14,7 +14,7 @@ const SingUp = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updateProfile, updateError] = useUpdateProfile(auth);
     const [sendEmailVerification, varificationSending, verificationError] = useSendEmailVerification(
         auth
     );
